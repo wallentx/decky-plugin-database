@@ -1,0 +1,95 @@
+name: Report Plugin As Broken
+description: Flag a plugin as broken
+title: "[Plugin Broken]: "
+labels: ["plugin-flag"]
+projects: ["wallentx/3"]
+assignees:
+  - wallentx
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is to report a Plugin as being broken
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened?
+      description: What did you expect to happen?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      description: What plugin are you reporting?
+      options:
+        - Animation Changer
+        - Audio Loader
+        - AutoFlatpaks
+        - AutoSuspend
+        - Bash Shortcuts
+        - Battery Tracker
+        - Bluetooth
+        - Bookmarks
+        - Controller Tools
+        - CSS Loader
+        - DeckFAQs
+        - DeckMTP
+        - DeckRoulette
+        - DeckSettings
+        - Decky Cloud Save
+        - Decky Recorder
+        - Decky Terminal
+        - DeckyFileServer
+        - Discord Status
+        - Emuchievements
+        - Fantastic
+        - Free Games
+        - Free Loader
+        - FriendsFix
+        - Game Theme Music
+        - GameView Music
+        - HLTB for Deck
+        - MangoPeel
+        - Memory Deck
+        - MetaDeck
+        - MicroSDeck
+        - MoonDeck
+        - MusicControl
+        - Network Info
+        - Notebook
+        - Pause Games
+        - PlayTime
+        - PowerTools
+        - ProtonDB Badges
+        - Quick Launch
+        - RadiYo!
+        - Save Manager
+        - ScreenshotUploader
+        - Shotty
+        - Steamback
+        - SteamGridDB
+        - Storage Cleaner
+        - Syncthing
+        - System Toolbox
+        - TabMaster
+        - Tailscale Control
+        - TS3 QuickAccess
+        - TunnelDeck
+        - vibrantDeck
+        - Volume Boost
+        - Volume Mixer
+        - Web Browser
+        - Wine Cellar
+        - XREAL Air Driver
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: plugin_version
+    attributes:
+      label: Plugin Version
+      description: What version of the Plugin are you reporting the issue with?
+    validations:
+      required: false
